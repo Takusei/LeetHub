@@ -21,7 +21,7 @@
   "permissions": [
     "https://github.com/*",
     "https://api.github.com/*",
-    "https://leetcode.com/*",
+    "https://leetcode.cn/*",
     "https://practice.geeksforgeeks.org/*",
     "tabs",
     "unlimitedStorage",
@@ -30,7 +30,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://leetcode.com/*",
+        "https://leetcode.cn/*",
         "https://github.com/*",
         "https://practice.geeksforgeeks.org/*"
       ],

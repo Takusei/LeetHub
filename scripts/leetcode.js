@@ -273,7 +273,7 @@ function findCode(
     // for normal problem submisson
     const submissionRef = e[1].innerHTML.split(' ')[1];
     submissionURL =
-      'https://leetcode.com' +
+      'https://leetcode.cn' +
       submissionRef.split('=')[1].slice(1, -1);
   } else {
     // for a submission in explore section
@@ -555,7 +555,7 @@ document.addEventListener('click', (event) => {
  this is because the dom is populated after data is fetched by opening the note */
 function getNotesIfAny() {
   // there are no notes on expore
-  if (document.URL.startsWith('https://leetcode.com/explore/'))
+  if (document.URL.startsWith('https://leetcode.cn/explore/'))
     return '';
 
   notes = '';
@@ -716,7 +716,7 @@ function startUploadCountDown() {
 
 /* we will need specific anchor element that is specific to the page you are in Eg. Explore */
 function insertToAnchorElement(elem) {
-  if (document.URL.startsWith('https://leetcode.com/explore/')) {
+  if (document.URL.startsWith('https://leetcode.cn/explore/')) {
     // means we are in explore page
     action = document.getElementsByClassName('action');
     if (
